@@ -315,7 +315,7 @@ export default function App() {
               배차 실패율 = available_car_count = 0 인 조회 수 &divide; 전체 조회 수 &times; 100
             </div>
             <div style={{fontSize:11, color:"var(--color-text-secondary)"}}>
-              출처: service_metrics.log_get_car_classes (2026.02.09~03.08, 최근 4주)<br/>
+              출처: service_metrics.log_get_car_classes (2026.02.16~03.15, 최근 4주)<br/>
               의미: 이용자가 해당 존을 조회했을 때 실제로 "차 없음"을 경험한 비율 &mdash; 가동률보다 직접적인 수요 미충족 지표
             </div>
           </div>
