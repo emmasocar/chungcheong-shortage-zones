@@ -148,9 +148,9 @@ export default function App() {
       {/* 요약 카드 */}
       <div style={{display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:10, marginBottom:14}}>
         {[
-          {label:"S 즉시 증차", val:`${sCount}개`, bg:"#FCEBEB", c:"#791F1F", sub:"Gap 3\u2191 + 실패율 40%\u2191"},
-          {label:"A 적극 증차", val:`${aCount}개`, bg:"#FAECE7", c:"#993C1D", sub:"Gap 2\u2191 or 실패율 55%\u2191"},
-          {label:"B 증차 검토", val:`${bCount}개`, bg:"#FAEEDA", c:"#633806", sub:"Gap 1\u2191 + 실패율 40%\u2191"},
+          {label:"S 즉시 증차", val:`${sCount}개`, bg:"#FCEBEB", c:"#791F1F", sub:"Gap 3↑ + 실패율 40%↑"},
+          {label:"A 적극 증차", val:`${aCount}개`, bg:"#FAECE7", c:"#993C1D", sub:"Gap 2↑ or 실패율 55%↑"},
+          {label:"B 증차 검토", val:`${bCount}개`, bg:"#FAEEDA", c:"#633806", sub:"Gap 1↑ + 실패율 40%↑"},
           {label:"현재 선택 증차", val:`+${totalAdd}대`, bg:"var(--color-background-secondary)", c:"var(--color-text-primary)", sub:`${rows.length}개 존`},
         ].map(m=>(
           <div key={m.label} style={{background:m.bg, borderRadius:8, padding:"10px 14px"}}>
@@ -164,9 +164,9 @@ export default function App() {
       {/* 등급 기준 설명 */}
       <div style={{background:"var(--color-background-secondary)", borderRadius:8, padding:"10px 16px", marginBottom:14, fontSize:12, lineHeight:1.8}}>
         <strong>등급 기준</strong> &nbsp;
-        <span style={{color:"#791F1F", fontWeight:500}}>S</span>: Gap 3\u2191 AND 실패율 40%\u2191 &nbsp;&middot;&nbsp;
-        <span style={{color:"#993C1D", fontWeight:500}}>A</span>: Gap 2\u2191 AND 실패율 40%\u2191, OR Gap 3\u2191 AND 실패율 20%\u2191, OR Gap 1\u2191 AND 실패율 55%\u2191 &nbsp;&middot;&nbsp;
-        <span style={{color:"#633806", fontWeight:500}}>B</span>: Gap 2\u2191 AND 실패율 20%\u2191, OR Gap 1\u2191 AND 실패율 40%\u2191
+        <span style={{color:"#791F1F", fontWeight:500}}>S</span>: Gap 3↑ AND 실패율 40%↑ &nbsp;&middot;&nbsp;
+        <span style={{color:"#993C1D", fontWeight:500}}>A</span>: Gap 2↑ AND 실패율 40%↑, OR Gap 3↑ AND 실패율 20%↑, OR Gap 1↑ AND 실패율 55%↑ &nbsp;&middot;&nbsp;
+        <span style={{color:"#633806", fontWeight:500}}>B</span>: Gap 2↑ AND 실패율 20%↑, OR Gap 1↑ AND 실패율 40%↑
       </div>
 
       {/* 필터 */}
